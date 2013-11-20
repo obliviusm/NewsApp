@@ -4,7 +4,6 @@
 		<div class="field">
 			<%= f.radio_button :record_id, article.id, 
 			:checked => (@default_article.record_id == article.id)  %>
-			<%= (@default_article.record_id == article.id).to_s%>
 			<%= label_tag( ("record_id" + article.id.to_s).to_sym , article.title)%>
 		</div>
 	<%end%>
