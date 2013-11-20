@@ -1,5 +1,6 @@
 NewsApp::Application.routes.draw do
   get "admin/article"
+  get "/" => "articles#index"
   resources :articles
   resources :defaults
 

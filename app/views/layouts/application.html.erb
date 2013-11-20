@@ -7,7 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<h2>Menu</h2>
+<%= link_to 'Articles', "/" %>
+<%= link_to 'Administrate articles', admin_article_path%>
 <%= yield %>
 
 </body>
